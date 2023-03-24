@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "383321207071",
+    "project_id": "tinterview-68073",
+    "storage_bucket": "tinterview-68073.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383321207071:android:88ff3693c7e2e79fa1802a",
+        "android_client_info": {
+          "package_name": "com.tinterview.tinterview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383321207071-d8ftkjpk2b9teqt88sailpabkkfi0da3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARwU-mPOY00yZwDLebZ4F9ZhxoBI6aDF8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383321207071-d8ftkjpk2b9teqt88sailpabkkfi0da3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
