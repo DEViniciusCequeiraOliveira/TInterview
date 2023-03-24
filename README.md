@@ -1,7 +1,7 @@
 # tinterview
 
 Projeto do TCC em Desenvolvimento de Sistemas - SENAI/Feira de Santana(BA)
-App que reune as principais perguntas de entrevistas de emprego em TI.
+App que reúne as principais perguntas de entrevistas de emprego em TI.
 
 ## Getting Started
 
