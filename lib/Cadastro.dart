@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Cadastro extends StatefulWidget {
   const Cadastro({Key? key}) : super(key: key);
@@ -7,49 +8,58 @@ class Cadastro extends StatefulWidget {
   State<Cadastro> createState() => _CadastroState();
 }
 
+abstract class ValidadorCampos {
+  bool validarNome(String nome);
+  bool validarEmail(String email);
+  bool validarSenha(String senha);
+}
+
+class ValidadorCamposPadrao implements ValidadorCampos {
+  @override
+  bool validarNome(String nome) {
+    return nome.isNotEmpty;
+  }
+
+  @override
+  bool validarEmail(String email) {
+    return email.isNotEmpty && email.contains("@");
+  }
+
+  @override
+  bool validarSenha(String senha) {
+    return senha.length >= 5;
+  }
+}
+
+
+
 class _CadastroState extends State<Cadastro> {
   // controladores
   TextEditingController _controllerNome = TextEditingController();
   TextEditingController _controllerEmail = TextEditingController();
   TextEditingController _controllerSenha = TextEditingController();
   String _mensagemErro = "";
+  ValidadorCampos _validador = ValidadorCamposPadrao();
 
-  void validarCampos() {
+  void _validarCampos() {
     // recuperar dados dos campos
     String nome = _controllerNome.text.trim();
     String email = _controllerEmail.text.trim();
     String senha = _controllerSenha.text;
 
-    if (nome.isEmpty) {
-      setState(() {
-        _mensagemErro = "Preencha o nome";
-      });
-      return;
+    void _validarCampos() {
+      if (_validador.validarNome(_controllerNome.text) &&
+          _validador.validarEmail(_controllerEmail.text) &&
+          _validador.validarSenha(_controllerSenha.text)) {
+
+        _cadastrarUsuario() {
+          FirebaseAuth auth = FirebaseAuth.instance;
+          auth.createUserWithEmailAndPassword(email: null, password: null);
+        }
+
+      }
     }
-
-    if (email.isEmpty || !email.contains("@")) {
-      setState(() {
-        _mensagemErro = "Formato de email inválido";
-      });
-      return;
-    }
-
-    if (senha.length < 5) {
-      setState(() {
-        _mensagemErro = "A senha deve ter pelo menos 5 caracteres";
-      });
-      return;
-    }
-
-    // fazer algo com os dados validados
-    // ...
-
-    // limpar mensagem de erro, se houver
-    setState(() {
-      _mensagemErro = "";
-    });
-  }
-
+}
 
   @override
   Widget build(BuildContext context) {
@@ -151,7 +161,7 @@ class _CadastroState extends State<Cadastro> {
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Color(0xFFE7D110)),
                       onPressed: () {
-                        validarCampos();
+                        _validarCampos();
                       }),
                 ),
                Center (
