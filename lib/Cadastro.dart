@@ -8,6 +8,49 @@ class Cadastro extends StatefulWidget {
 }
 
 class _CadastroState extends State<Cadastro> {
+  // controladores
+  TextEditingController _controllerNome = TextEditingController();
+  TextEditingController _controllerEmail = TextEditingController();
+  TextEditingController _controllerSenha = TextEditingController();
+  String _mensagemErro = "";
+
+  void validarCampos() {
+    // recuperar dados dos campos
+    String nome = _controllerNome.text.trim();
+    String email = _controllerEmail.text.trim();
+    String senha = _controllerSenha.text;
+
+    if (nome.isEmpty) {
+      setState(() {
+        _mensagemErro = "Preencha o nome";
+      });
+      return;
+    }
+
+    if (email.isEmpty || !email.contains("@")) {
+      setState(() {
+        _mensagemErro = "Formato de email inválido";
+      });
+      return;
+    }
+
+    if (senha.length < 5) {
+      setState(() {
+        _mensagemErro = "A senha deve ter pelo menos 5 caracteres";
+      });
+      return;
+    }
+
+    // fazer algo com os dados validados
+    // ...
+
+    // limpar mensagem de erro, se houver
+    setState(() {
+      _mensagemErro = "";
+    });
+  }
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,9 +75,10 @@ class _CadastroState extends State<Cadastro> {
                 Padding(
                   padding: EdgeInsets.only(bottom: 8),
                   child: TextField(
+                    controller: _controllerNome,
                     autofocus: true,
                     keyboardType: TextInputType.text,
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, color: Color(0xFFEEEEEE)),
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.fromLTRB(
                         32,
@@ -54,8 +98,9 @@ class _CadastroState extends State<Cadastro> {
                 Padding(
                   padding: EdgeInsets.only(bottom: 8),
                   child: TextField(
+                    controller: _controllerEmail,
                     keyboardType: TextInputType.emailAddress,
-                    style: TextStyle(fontSize: 20),
+                    style: TextStyle(fontSize: 20, color: Color(0xFFEEEEEE)),
                     decoration: InputDecoration(
                       contentPadding: EdgeInsets.fromLTRB(
                         32,
@@ -73,9 +118,10 @@ class _CadastroState extends State<Cadastro> {
                   ),
                 ),
                 TextField(
-                  autofocus: true,
+                  controller: _controllerSenha,
+                  obscureText: true,
                   keyboardType: TextInputType.text,
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 20, color: Color(0xFFEEEEEE)),
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.fromLTRB(
                       32,
@@ -104,10 +150,14 @@ class _CadastroState extends State<Cadastro> {
                       ),
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Color(0xFFE7D110)),
-                      onPressed: () {}),
+                      onPressed: () {
+                        validarCampos();
+                      }),
                 ),
-
-              ],
+               Center (
+                 child: Text(_mensagemErro,
+                    style: TextStyle(color: Colors.red, fontSize: 20))
+              )],
             ),
           ))),
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
+import 'package:tinterview/Cadastro.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -86,7 +87,9 @@ class _LoginState extends State<Login> {
                 Center(
                     child: GestureDetector(
                   onTap: () {
-                    //inserir o codigo do hiperlink
+                    var push = Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context)=> Cadastro()));
                   },
                   child: RichText(
                       text: TextSpan(
