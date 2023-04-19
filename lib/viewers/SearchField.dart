@@ -59,10 +59,10 @@ class _SearchFieldState extends State<SearchField> {
                 labelText: 'Digite sua busca',
                 suffixIcon: Icon(Icons.search),
                 labelStyle: TextStyle(
-                  color: Color(0xFF222222) // Cor do rótulo
+                  color: Color(0xFF222222)
                 ),
                 suffixStyle: TextStyle(
-                  color: Color(0xFF222222), // Cor do ícone de sufixo
+                  color: Color(0xFF222222),
                 ),
                 border: OutlineInputBorder(
 

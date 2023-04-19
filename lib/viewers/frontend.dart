@@ -7,7 +7,7 @@ class frontend extends StatefulWidget {
 }
 
 class _frontendState extends State<frontend> {
-  List<bool> _pressed = [false, false];
+  List<bool> _pressed = [false, false, false, false];
 
   @override
   Widget build(BuildContext context) {
@@ -134,6 +134,88 @@ class _frontendState extends State<frontend> {
         ],
 
       ),
+            SizedBox(height: 16),
+            Column(children: <Widget> [
+              Text("Senioridade", style: TextStyle(fontSize: 20, color: Color(0xFFD9D9D9), fontWeight: FontWeight.bold)),
+              SizedBox(height: 16)
+            ],
+            ),
+
+            Row(
+
+              children: <Widget>[
+                InkWell(
+
+                  onTap: () {
+                    setState(() {
+                      _pressed[2] = !_pressed[2];
+                    }
+                      // Ação do botão quando for clicado
+                    );
+                  },
+                  child: Container(
+                    margin: EdgeInsets.only(left: 8, right: 8),
+                    width: 100,
+                    height: 50,
+                    decoration: BoxDecoration(
+                        color: _pressed[2] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        borderRadius: BorderRadius.circular(25),
+                        border: Border.all(
+                          color: _pressed[2] ? Color(0xFFD9D9D9) : Color(0xFFFAE800),
+                          width: 2,
+                        )
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Estágio',
+                        style: TextStyle(
+                          color: _pressed[2] ? Color(0xFF8A8787) : Color(0xFFFAE800),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(width: 8),
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      _pressed[3] = !_pressed[3];
+                    }
+                      // Ação do botão quando for clicado
+                    );
+                  },
+                  child: Container(
+                    width: 100,
+                    height: 50,
+                    decoration: BoxDecoration(
+                        color: _pressed[3] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        borderRadius: BorderRadius.circular(25),
+                        border: Border.all(
+                          color: _pressed[3] ? Color(0xFFD9D9D9) : Color(0xFFFAE800),
+                          width: 2,
+                        )
+                    ),
+                    child: Center(
+                      child: Text(
+                        'Trainee',
+                        style: TextStyle(
+                          color: _pressed[3] ? Color(0xFF8A8787) : Color(0xFFFAE800),
+
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+
+
+
+
+
+              ],
+            )
+
           ],
       )
     );
