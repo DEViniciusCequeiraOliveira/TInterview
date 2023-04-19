@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
+import 'package:tinterview/viewers/backend.dart';
+import 'package:tinterview/viewers/banco.dart';
+import 'package:tinterview/viewers/frontend.dart';
+import 'package:tinterview/viewers/mobile.dart';
 
 class SearchField extends StatefulWidget {
   @override
@@ -131,7 +135,7 @@ class _SearchFieldState extends State<SearchField> {
             children: <Widget>[
               InkWell(
                 onTap: () {
-                  // Ação do quadrado clicável "frontend"
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => frontend()));
                 },
                 child: Container(
                   width: 150,
@@ -155,7 +159,7 @@ class _SearchFieldState extends State<SearchField> {
               ),
               InkWell(
                 onTap: () {
-                  // Ação do quadrado clicável "Backend"
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => backend()));
                 },
                 child: Container(
                   width: 150,
@@ -188,7 +192,7 @@ class _SearchFieldState extends State<SearchField> {
                   children: <Widget>[
                     InkWell(
                       onTap: () {
-                        // Ação do quadrado clicável "Mobile"
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => mobile()));
                       },
                       child: Container(
                         width: 150,
@@ -212,7 +216,7 @@ class _SearchFieldState extends State<SearchField> {
                     ),
                     InkWell(
                       onTap: () {
-                        // Ação do quadrado clicável "banco de dados"
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => banco()));
                       },
                       child: Container(
                         width: 150,

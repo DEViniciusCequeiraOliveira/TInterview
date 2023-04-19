@@ -7,7 +7,7 @@ import 'viewers/frontend.dart';
 
 void main(){
     runApp(MaterialApp(
-        home: frontend(),
+        home: SearchField(),
 
         debugShowCheckedModeBanner: false,
     ));

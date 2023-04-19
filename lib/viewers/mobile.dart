@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 
-class frontend extends StatefulWidget {
+class mobile extends StatefulWidget {
   @override
-  _frontendState createState() => _frontendState();
+  _mobileState createState() => _mobileState();
 }
 
-class _frontendState extends State<frontend> {
+class _mobileState extends State<mobile> {
   List<bool> _pressed = [false, false];
 
   @override
@@ -141,5 +141,5 @@ class _frontendState extends State<frontend> {
 }
 
 void main() {
-  runApp(frontend());
+  runApp(mobile());
 }
