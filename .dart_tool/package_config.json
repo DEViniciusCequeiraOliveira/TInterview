@@ -3,9 +3,9 @@
   "packages": [
     {
       "name": "_flutterfire_internals",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/_flutterfire_internals-1.0.18",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/_flutterfire_internals-1.1.1",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "async",
@@ -33,21 +33,21 @@
     },
     {
       "name": "cloud_firestore",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/cloud_firestore-4.4.5",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/cloud_firestore-4.5.2",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "cloud_firestore_platform_interface",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/cloud_firestore_platform_interface-5.11.5",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/cloud_firestore_platform_interface-5.12.1",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "cloud_firestore_web",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/cloud_firestore_web-3.3.5",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/cloud_firestore_web-3.4.2",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "collection",
@@ -69,63 +69,75 @@
     },
     {
       "name": "firebase_auth",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth-4.3.0",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth-4.4.2",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_auth_platform_interface",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth_platform_interface-6.12.0",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth_platform_interface-6.13.1",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_auth_web",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth_web-5.2.10",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_auth_web-5.3.2",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_core",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_core-2.8.0",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_core-2.10.0",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_core_platform_interface",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_core_platform_interface-4.5.3",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_core_platform_interface-4.6.0",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_core_web",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_core_web-2.2.2",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_core_web-2.3.0",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_storage",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_storage-11.0.16",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_storage-11.1.1",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_storage_platform_interface",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_storage_platform_interface-4.1.32",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_storage_platform_interface-4.2.1",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "firebase_storage_web",
-      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_storage_web-3.3.25",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/firebase_storage_web-3.4.1",
       "packageUri": "lib/",
-      "languageVersion": "2.16"
+      "languageVersion": "2.18"
     },
     {
       "name": "flutter",
       "rootUri": "file:///C:/src/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.17"
+    },
+    {
+      "name": "flutter_icons",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_icons-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
+      "name": "flutter_icons_null_safety",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_icons_null_safety-1.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_lints",
@@ -278,7 +290,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-03-24T20:36:22.601547Z",
+  "generated": "2023-04-18T23:22:44.458516Z",
   "generator": "pub",
   "generatorVersion": "2.19.5"
 }
