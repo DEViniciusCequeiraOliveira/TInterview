@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
 import 'package:tinterview/viewers/backend.dart';
 import 'package:tinterview/viewers/banco.dart';
-import 'package:tinterview/viewers/frontend.dart';
+import 'package:tinterview/viewers/FrontendPage.dart';
 import 'package:tinterview/viewers/mobile.dart';
 
 class SearchField extends StatefulWidget {
@@ -43,7 +43,10 @@ class _SearchFieldState extends State<SearchField> {
           ),
         ],
       ),
-      body: Column(
+      body:
+      SingleChildScrollView (
+    child:
+      Column(
         children: <Widget>[
           Padding(
             padding: EdgeInsets.all(16.0),
@@ -135,7 +138,7 @@ class _SearchFieldState extends State<SearchField> {
             children: <Widget>[
               InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => frontend()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => FrontendPage()));
                 },
                 child: Container(
                   width: 150,
@@ -252,7 +255,7 @@ class _SearchFieldState extends State<SearchField> {
             ),
           ),
         ],
-      ),
+      ),),
     );
   }
 }
