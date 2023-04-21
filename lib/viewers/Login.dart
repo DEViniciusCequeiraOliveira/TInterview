@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:tinterview/viewers/Cadastro.dart';
 import 'package:tinterview/viewers/SearchField.dart';
+import 'package:tinterview/controllers/LoginSocial.dart';
+
+
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -11,6 +14,7 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  final LoginController _loginController = LoginController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,7 +49,12 @@ class _LoginState extends State<Login> {
                       hintStyle: TextStyle(color: Color(0xFFE7D110)),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(8),
-                        borderSide: BorderSide(color: Color(0xFFE7D110)),
+                        borderSide: BorderSide(color: Color(0xFFeeeeee)), //não tá mudando a cor do textfield
+                      ),
+                      focusedBorder: OutlineInputBorder(
+                        borderSide: BorderSide(
+                          color: Color(0xFFFFED00),
+                        ),
                       ),
                     ),
                   ),
@@ -65,12 +74,18 @@ class _LoginState extends State<Login> {
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
                       borderSide: BorderSide(
-                        color: Color(0xFFE7D110),
+                        color: Color(0xFFE222222),
                         width: 5.0,
                       ),
                     ),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Color(0xFFFFED00),
+                      ),
+                    ),
                   ),
-                ),
+                  ),
+
                 Padding(
                   padding: EdgeInsets.only(top: 16, bottom: 10),
                   child: ElevatedButton(
@@ -116,9 +131,14 @@ class _LoginState extends State<Login> {
                     child: SignInButton(
                       Buttons.Google,
                       text: "Login com o Google",
-                      onPressed: () {
-                        //instanciar a função de login com o google
-                      },
+                      onPressed: () async {
+                        final user = await _loginController.signInWithGoogle();
+                        if (user != null) {
+                          Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SearchField()));
+                        } else {
+    // Handle unsuccessful sign-in
+    print('Failed to sign in with Google.');
+    }}
                     )),
                 Padding(
                     padding: EdgeInsets.only(bottom: 4),

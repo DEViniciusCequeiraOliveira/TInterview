@@ -4,10 +4,13 @@ import 'viewers/Login.dart';
 import 'viewers/Cadastro.dart';
 import 'viewers/SearchField.dart';
 import 'viewers/FrontendPage.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main(){
+void main() async {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp();
     runApp(MaterialApp(
-        home: Home(),
+        home: Login(),
 
         debugShowCheckedModeBanner: false,
     ));

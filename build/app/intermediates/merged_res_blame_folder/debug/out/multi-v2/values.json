@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.tinterview.tinterview.app-mergeDebugResources-14:/values/values.xml",
+            "outputFile": "com.tinterview.tinterview.app-mergeDebugResources-15:/values/values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\sdfad\\.gradle\\caches\\transforms-3\\40ff8c014bc3b03149787e1d45a42dea\\transformed\\jetified-window-1.0.0-beta04\\res\\values\\values.xml",

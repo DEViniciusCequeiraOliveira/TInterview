@@ -170,6 +170,42 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "google_identity_services_web",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/google_identity_services_web-0.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "google_sign_in",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in-6.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "google_sign_in_android",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in_android-6.1.9",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "google_sign_in_ios",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in_ios-5.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "google_sign_in_platform_interface",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in_platform_interface-2.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "google_sign_in_web",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/google_sign_in_web-0.12.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "http",
       "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/http-0.13.5",
       "packageUri": "lib/",
@@ -226,6 +262,12 @@
     {
       "name": "plugin_platform_interface",
       "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/plugin_platform_interface-2.1.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "quiver",
+      "rootUri": "file:///C:/Users/sdfad/AppData/Local/Pub/Cache/hosted/pub.dev/quiver-3.2.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
@@ -290,7 +332,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-04-20T21:42:16.108897Z",
+  "generated": "2023-04-21T02:16:33.428211Z",
   "generator": "pub",
   "generatorVersion": "2.19.5"
 }

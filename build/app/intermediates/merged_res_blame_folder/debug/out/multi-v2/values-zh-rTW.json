@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.tinterview.tinterview.app-mergeDebugResources-14:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.tinterview.tinterview.app-mergeDebugResources-15:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\sdfad\\.gradle\\caches\\transforms-3\\8f31701e663a8c1514b353cc4d7239a2\\transformed\\jetified-play-services-base-18.0.1\\res\\values-zh-rTW\\values.xml",
