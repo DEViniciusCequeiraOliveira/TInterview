@@ -13,13 +13,13 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   Future<void> _carregarApp() async {
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(Duration(seconds: 5));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF222222),
+      backgroundColor: Color(0xFFeeeeee),
       body: Container(
         padding: EdgeInsets.all(16),
         child: Center (
@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
                 Padding(
                   padding: EdgeInsets.only(bottom: 32),
                   child: Image.asset(
-                    "images/logo.png",
+                    "images/logoFull.png",
                     width: 400,
                     height: 300,
                   ),
