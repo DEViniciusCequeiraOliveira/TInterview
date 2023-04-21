@@ -7,7 +7,7 @@ import 'viewers/FrontendPage.dart';
 
 void main(){
     runApp(MaterialApp(
-        home: FrontendPage(),
+        home: Home(),
 
         debugShowCheckedModeBanner: false,
     ));

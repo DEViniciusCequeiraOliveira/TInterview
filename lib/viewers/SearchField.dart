@@ -244,16 +244,7 @@ class _SearchFieldState extends State<SearchField> {
                   ],
                 ),
               ]),
-          Expanded(
-            child: ListView.builder(
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return ListTile(
-                    // Ação de retornar a lista de busca
-                    );
-              },
-            ),
-          ),
+
         ],
       ),),
     );

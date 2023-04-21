@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:tinterview/viewers/Cadastro.dart';
+import 'package:tinterview/viewers/SearchField.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -31,7 +32,6 @@ class _LoginState extends State<Login> {
                 Padding(
                   padding: EdgeInsets.only(bottom: 8),
                   child: TextField(
-                    autofocus: true,
                     keyboardType: TextInputType.emailAddress,
                     style: TextStyle(fontSize: 20),
                     decoration: InputDecoration(
@@ -51,7 +51,6 @@ class _LoginState extends State<Login> {
                   ),
                 ),
                 TextField(
-                  autofocus: true,
                   keyboardType: TextInputType.text,
                   style: TextStyle(fontSize: 20),
                   decoration: InputDecoration(
@@ -142,7 +141,7 @@ class _LoginState extends State<Login> {
                 Center(
                     child: GestureDetector(
                         onTap: () {
-                          //inserir o codigo do hiperlink
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => SearchField()));
                         },
                         child: Text('Iniciar como convidado',
                         style: TextStyle(color:Color(0xFFE7D110), fontWeight: FontWeight.bold)),
