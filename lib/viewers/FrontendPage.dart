@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinterview/viewers/SearchField.dart';
 
 class FrontendPage extends StatefulWidget {
   @override
@@ -22,8 +23,7 @@ class _FrontendPageState extends State<FrontendPage> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),
           onPressed: () {
-            Navigator.pop(context); // volta para a tela anterior
-          },
+            Navigator.push(context, MaterialPageRoute(builder: (context) => SearchField()));},
         ),
         actions: <Widget>[
           IconButton(

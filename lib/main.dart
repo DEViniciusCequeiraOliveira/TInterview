@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tinterview/viewers/BackendPage.dart';
 import 'viewers/Home.dart';
 import 'viewers/Login.dart';
 import 'viewers/Cadastro.dart';
@@ -10,7 +11,7 @@ void main() async {
     WidgetsFlutterBinding.ensureInitialized();
     await Firebase.initializeApp();
     runApp(MaterialApp(
-        home: Login(),
+        home: BackendPage(),
 
         debugShowCheckedModeBanner: false,
     ));

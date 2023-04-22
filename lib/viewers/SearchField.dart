@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
-import 'package:tinterview/viewers/backend.dart';
-import 'package:tinterview/viewers/banco.dart';
+import 'package:tinterview/viewers/BackendPage.dart';
+import 'package:tinterview/viewers/BancoDeDadosPage.dart';
 import 'package:tinterview/viewers/FrontendPage.dart';
-import 'package:tinterview/viewers/mobile.dart';
+import 'package:tinterview/viewers/MobilePage.dart';
 
 class SearchField extends StatefulWidget {
   @override
@@ -162,7 +162,7 @@ class _SearchFieldState extends State<SearchField> {
               ),
               InkWell(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => backend()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => BackendPage()));
                 },
                 child: Container(
                   width: 150,
@@ -195,7 +195,7 @@ class _SearchFieldState extends State<SearchField> {
                   children: <Widget>[
                     InkWell(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => mobile()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => MobilePage()));
                       },
                       child: Container(
                         width: 150,
@@ -219,7 +219,7 @@ class _SearchFieldState extends State<SearchField> {
                     ),
                     InkWell(
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => banco()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => BancoDeDadosPage()));
                       },
                       child: Container(
                         width: 150,
