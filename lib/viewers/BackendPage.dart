@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tinterview/viewers/SearchField.dart';
 
-
 class BackendPage extends StatefulWidget {
   @override
   _BackendPageState createState() => _BackendPageState();
@@ -24,7 +23,9 @@ class _BackendPageState extends State<BackendPage> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => SearchField())); },
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => SearchField()));
+          },
         ),
         actions: <Widget>[
           IconButton(
@@ -41,10 +42,8 @@ class _BackendPageState extends State<BackendPage> {
           ),
         ],
       ),
-      body:
-      SingleChildScrollView(
-        child:
-        Column(
+      body: SingleChildScrollView(
+        child: Column(
           children: <Widget>[
             SizedBox(height: 16),
             InkWell(
@@ -71,7 +70,6 @@ class _BackendPageState extends State<BackendPage> {
                         fontSize: 40,
                         color: Color(0xFFD9D9D9),
                         fontWeight: FontWeight.bold)),
-
               ],
             ),
             SizedBox(height: 16),
@@ -88,15 +86,15 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[0] = !_pressed[0];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     width: 120,
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[0] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[0] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[0]
@@ -123,15 +121,15 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[1] = !_pressed[1];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     width: 150,
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[1] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[1] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[1]
@@ -173,8 +171,8 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[2] = !_pressed[2];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
@@ -182,7 +180,7 @@ class _BackendPageState extends State<BackendPage> {
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[2] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[2] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[2]
@@ -208,15 +206,15 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[3] = !_pressed[3];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     width: 100,
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[3] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[3] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[3]
@@ -242,8 +240,8 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[4] = !_pressed[4];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
@@ -251,7 +249,7 @@ class _BackendPageState extends State<BackendPage> {
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[4] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[4] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[4]
@@ -283,8 +281,8 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[5] = !_pressed[5];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
@@ -292,7 +290,7 @@ class _BackendPageState extends State<BackendPage> {
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[5] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[5] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[5]
@@ -318,15 +316,15 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[6] = !_pressed[6];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     width: 100,
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[6] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[6] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[6]
@@ -347,9 +345,7 @@ class _BackendPageState extends State<BackendPage> {
                     ),
                   ),
                 ),
-
               ],
-
             ),
             SizedBox(height: 16),
             Column(
@@ -370,8 +366,8 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[7] = !_pressed[7];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
@@ -379,7 +375,7 @@ class _BackendPageState extends State<BackendPage> {
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[7] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[7] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[7]
@@ -405,8 +401,8 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[8] = !_pressed[8];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
@@ -414,7 +410,7 @@ class _BackendPageState extends State<BackendPage> {
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[8] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[8] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[8]
@@ -436,13 +432,12 @@ class _BackendPageState extends State<BackendPage> {
                   ),
                 ),
                 InkWell(
-
                   onTap: () {
                     setState(() {
                       _pressed[9] = !_pressed[9];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
@@ -450,7 +445,7 @@ class _BackendPageState extends State<BackendPage> {
                     height: 50,
                     decoration: BoxDecoration(
                         color:
-                        _pressed[9] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                            _pressed[9] ? Color(0xFFD9D9D9) : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[9]
@@ -470,14 +465,11 @@ class _BackendPageState extends State<BackendPage> {
                       ),
                     ),
                   ),
-
                 )
               ],
             ),
             SizedBox(height: 16),
-
             Row(
-
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 InkWell(
@@ -485,16 +477,17 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[10] = !_pressed[10];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 80,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[10] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[10]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[10]
@@ -520,16 +513,17 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[11] = !_pressed[11];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 80,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[11] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[11]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[11]
@@ -551,7 +545,6 @@ class _BackendPageState extends State<BackendPage> {
                   ),
                 ),
               ],
-
             ),
             SizedBox(height: 16),
             Column(
@@ -563,10 +556,8 @@ class _BackendPageState extends State<BackendPage> {
                         fontWeight: FontWeight.bold)),
               ],
             ),
-
             SizedBox(height: 16),
             Row(
-
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 InkWell(
@@ -574,16 +565,17 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[12] = !_pressed[12];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 80,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[12] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[12]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[12]
@@ -609,16 +601,17 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[13] = !_pressed[13];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 80,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[13] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[13]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[13]
@@ -640,21 +633,21 @@ class _BackendPageState extends State<BackendPage> {
                   ),
                 ),
                 InkWell(
-
                   onTap: () {
                     setState(() {
                       _pressed[14] = !_pressed[14];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 100,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[14] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[14]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[14]
@@ -674,17 +667,11 @@ class _BackendPageState extends State<BackendPage> {
                       ),
                     ),
                   ),
-
                 )
               ],
-
-
             ),
-
-            SizedBox(height:16),
+            SizedBox(height: 16),
             Row(
-
-
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 InkWell(
@@ -692,16 +679,17 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[15] = !_pressed[15];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 130,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[15] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[15]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[15]
@@ -727,16 +715,17 @@ class _BackendPageState extends State<BackendPage> {
                     setState(() {
                       _pressed[16] = !_pressed[16];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 80,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[16] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[16]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[16]
@@ -758,15 +747,10 @@ class _BackendPageState extends State<BackendPage> {
                   ),
                 ),
               ],
-
-
             ),
-
-
             SizedBox(height: 16),
             Column(
-              children:<Widget> [
-
+              children: <Widget>[
                 ElevatedButton(
                   onPressed: () {
                     // Ação ao pressionar o botão
@@ -775,19 +759,22 @@ class _BackendPageState extends State<BackendPage> {
                     backgroundColor: Color(0xFFFAE800),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
-
                     ),
                     minimumSize: Size(100, 50),
                   ),
-                  child: Text('APLICAR', style: TextStyle(color: Color(0xFF222222), fontWeight: FontWeight.bold)),
+                  child: Text('APLICAR',
+                      style: TextStyle(
+                          color: Color(0xFF222222),
+                          fontWeight: FontWeight.bold)),
                 ),
                 SizedBox(height: 16),
               ],
             )
           ],
-        ),),);
+        ),
+      ),
+    );
   }
-
 }
 
 void main() {

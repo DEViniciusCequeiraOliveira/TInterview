@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:tinterview/viewers/Login.dart';
+import 'package:tinterview/viewers/LoginPage.dart';
 import 'dart:async';
 
 class Home extends StatefulWidget {
-
   const Home({Key? key}) : super(key: key);
 
   @override
   State<Home> createState() => _HomeState();
-
 }
 
 class _HomeState extends State<Home> {
@@ -22,8 +20,8 @@ class _HomeState extends State<Home> {
       backgroundColor: Color(0xFFeeeeee),
       body: Container(
         padding: EdgeInsets.all(16),
-        child: Center (
-          child: SingleChildScrollView (
+        child: Center(
+          child: SingleChildScrollView(
             child: Column(
               children: <Widget>[
                 Padding(
@@ -36,7 +34,8 @@ class _HomeState extends State<Home> {
                 ),
                 FutureBuilder(
                   future: _carregarApp(),
-                  builder: (BuildContext context, AsyncSnapshot<void> snapshot) {
+                  builder:
+                      (BuildContext context, AsyncSnapshot<void> snapshot) {
                     if (snapshot.connectionState == ConnectionState.done) {
                       // Quando o Future estiver concluído, navegue para a próxima página
                       Navigator.pushReplacement(

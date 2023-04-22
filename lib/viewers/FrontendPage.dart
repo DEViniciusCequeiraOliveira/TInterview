@@ -23,7 +23,9 @@ class _FrontendPageState extends State<FrontendPage> {
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),
           onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context) => SearchField()));},
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => SearchField()));
+          },
         ),
         actions: <Widget>[
           IconButton(
@@ -40,10 +42,8 @@ class _FrontendPageState extends State<FrontendPage> {
           ),
         ],
       ),
-        body:
-        SingleChildScrollView(
-    child:
-        Column(
+      body: SingleChildScrollView(
+        child: Column(
           children: <Widget>[
             SizedBox(height: 16),
             InkWell(
@@ -70,7 +70,6 @@ class _FrontendPageState extends State<FrontendPage> {
                         fontSize: 40,
                         color: Color(0xFFD9D9D9),
                         fontWeight: FontWeight.bold)),
-
               ],
             ),
             SizedBox(height: 16),
@@ -346,9 +345,7 @@ class _FrontendPageState extends State<FrontendPage> {
                     ),
                   ),
                 ),
-
               ],
-
             ),
             SizedBox(height: 16),
             Column(
@@ -360,124 +357,124 @@ class _FrontendPageState extends State<FrontendPage> {
                         fontWeight: FontWeight.bold)),
               ],
             ),
-        SizedBox(height: 16),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            InkWell(
-              onTap: () {
-                setState(() {
-                  _pressed[7] = !_pressed[7];
-                }
-                  // Ação do botão quando for clicado
-                );
-              },
-              child: Container(
-                margin: EdgeInsets.only(left: 8, right: 8),
-                width: 80,
-                height: 50,
-                decoration: BoxDecoration(
-                    color:
-                    _pressed[7] ? Color(0xFFD9D9D9) : Color(0xFF363533),
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: _pressed[7]
-                          ? Color(0xFFD9D9D9)
-                          : Color(0xFFFAE800),
-                      width: 2,
-                    )),
-                child: Center(
-                  child: Text(
-                    'HTML',
-                    style: TextStyle(
-                      color: _pressed[7]
-                          ? Color(0xFF8A8787)
-                          : Color(0xFFFAE800),
-                      fontWeight: FontWeight.bold,
+            SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      _pressed[7] = !_pressed[7];
+                    }
+                        // Ação do botão quando for clicado
+                        );
+                  },
+                  child: Container(
+                    margin: EdgeInsets.only(left: 8, right: 8),
+                    width: 80,
+                    height: 50,
+                    decoration: BoxDecoration(
+                        color:
+                            _pressed[7] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        borderRadius: BorderRadius.circular(25),
+                        border: Border.all(
+                          color: _pressed[7]
+                              ? Color(0xFFD9D9D9)
+                              : Color(0xFFFAE800),
+                          width: 2,
+                        )),
+                    child: Center(
+                      child: Text(
+                        'HTML',
+                        style: TextStyle(
+                          color: _pressed[7]
+                              ? Color(0xFF8A8787)
+                              : Color(0xFFFAE800),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
                 ),
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                setState(() {
-                  _pressed[8] = !_pressed[8];
-                }
-                  // Ação do botão quando for clicado
-                );
-              },
-              child: Container(
-                margin: EdgeInsets.only(left: 8, right: 8),
-                width: 80,
-                height: 50,
-                decoration: BoxDecoration(
-                    color:
-                    _pressed[8] ? Color(0xFFD9D9D9) : Color(0xFF363533),
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: _pressed[8]
-                          ? Color(0xFFD9D9D9)
-                          : Color(0xFFFAE800),
-                      width: 2,
-                    )),
-                child: Center(
-                  child: Text(
-                    'CSS',
-                    style: TextStyle(
-                      color: _pressed[8]
-                          ? Color(0xFF8A8787)
-                          : Color(0xFFFAE800),
-                      fontWeight: FontWeight.bold,
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      _pressed[8] = !_pressed[8];
+                    }
+                        // Ação do botão quando for clicado
+                        );
+                  },
+                  child: Container(
+                    margin: EdgeInsets.only(left: 8, right: 8),
+                    width: 80,
+                    height: 50,
+                    decoration: BoxDecoration(
+                        color:
+                            _pressed[8] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        borderRadius: BorderRadius.circular(25),
+                        border: Border.all(
+                          color: _pressed[8]
+                              ? Color(0xFFD9D9D9)
+                              : Color(0xFFFAE800),
+                          width: 2,
+                        )),
+                    child: Center(
+                      child: Text(
+                        'CSS',
+                        style: TextStyle(
+                          color: _pressed[8]
+                              ? Color(0xFF8A8787)
+                              : Color(0xFFFAE800),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
-        SizedBox(height: 16),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            InkWell(
-              onTap: () {
-                setState(() {
-                  _pressed[9] = !_pressed[9];
-                }
-                  // Ação do botão quando for clicado
-                );
-              },
-              child: Container(
-                margin: EdgeInsets.only(left: 8, right: 8),
-                width: 100,
-                height: 50,
-                decoration: BoxDecoration(
-                    color:
-                    _pressed[9] ? Color(0xFFD9D9D9) : Color(0xFF363533),
-                    borderRadius: BorderRadius.circular(25),
-                    border: Border.all(
-                      color: _pressed[9]
-                          ? Color(0xFFD9D9D9)
-                          : Color(0xFFFAE800),
-                      width: 2,
-                    )),
-                child: Center(
-                  child: Text(
-                    'JavaScript',
-                    style: TextStyle(
-                      color: _pressed[9]
-                          ? Color(0xFF8A8787)
-                          : Color(0xFFFAE800),
-                      fontWeight: FontWeight.bold,
+            SizedBox(height: 16),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                      _pressed[9] = !_pressed[9];
+                    }
+                        // Ação do botão quando for clicado
+                        );
+                  },
+                  child: Container(
+                    margin: EdgeInsets.only(left: 8, right: 8),
+                    width: 100,
+                    height: 50,
+                    decoration: BoxDecoration(
+                        color:
+                            _pressed[9] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        borderRadius: BorderRadius.circular(25),
+                        border: Border.all(
+                          color: _pressed[9]
+                              ? Color(0xFFD9D9D9)
+                              : Color(0xFFFAE800),
+                          width: 2,
+                        )),
+                    child: Center(
+                      child: Text(
+                        'JavaScript',
+                        style: TextStyle(
+                          color: _pressed[9]
+                              ? Color(0xFF8A8787)
+                              : Color(0xFFFAE800),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
                 ),
-              ),
+              ],
             ),
-          ],
-        ),
-SizedBox(height: 16),
+            SizedBox(height: 16),
             Column(
               children: <Widget>[
                 Text("Frameworks",
@@ -496,16 +493,17 @@ SizedBox(height: 16),
                     setState(() {
                       _pressed[10] = !_pressed[10];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 80,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[10] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[10]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[10]
@@ -531,16 +529,17 @@ SizedBox(height: 16),
                     setState(() {
                       _pressed[11] = !_pressed[11];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 80,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[11] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[11]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[11]
@@ -572,16 +571,17 @@ SizedBox(height: 16),
                     setState(() {
                       _pressed[12] = !_pressed[12];
                     }
-                      // Ação do botão quando for clicado
-                    );
+                        // Ação do botão quando for clicado
+                        );
                   },
                   child: Container(
                     margin: EdgeInsets.only(left: 8, right: 8),
                     width: 90,
                     height: 50,
                     decoration: BoxDecoration(
-                        color:
-                        _pressed[12] ? Color(0xFFD9D9D9) : Color(0xFF363533),
+                        color: _pressed[12]
+                            ? Color(0xFFD9D9D9)
+                            : Color(0xFF363533),
                         borderRadius: BorderRadius.circular(25),
                         border: Border.all(
                           color: _pressed[12]
@@ -606,8 +606,7 @@ SizedBox(height: 16),
             ),
             SizedBox(height: 16),
             Column(
-              children:<Widget> [
-
+              children: <Widget>[
                 ElevatedButton(
                   onPressed: () {
                     // Ação ao pressionar o botão
@@ -616,17 +615,21 @@ SizedBox(height: 16),
                     backgroundColor: Color(0xFFFAE800),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25),
-
                     ),
                     minimumSize: Size(100, 50),
                   ),
-                  child: Text('APLICAR', style: TextStyle(color: Color(0xFF222222), fontWeight: FontWeight.bold)),
+                  child: Text('APLICAR',
+                      style: TextStyle(
+                          color: Color(0xFF222222),
+                          fontWeight: FontWeight.bold)),
                 ),
                 SizedBox(height: 16),
               ],
             )
           ],
-        ),),);
+        ),
+      ),
+    );
   }
 }
 
