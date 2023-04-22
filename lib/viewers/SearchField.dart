@@ -3,6 +3,7 @@ import 'package:flutter_icons_null_safety/flutter_icons_null_safety.dart';
 import 'package:tinterview/viewers/BackendPage.dart';
 import 'package:tinterview/viewers/BancoDeDadosPage.dart';
 import 'package:tinterview/viewers/FrontendPage.dart';
+import 'package:tinterview/viewers/ItensSalvosPage.dart';
 import 'package:tinterview/viewers/MobilePage.dart';
 
 class SearchField extends StatefulWidget {
@@ -32,7 +33,7 @@ class _SearchFieldState extends State<SearchField> {
           IconButton(
             icon: Icon(Icons.bookmark),
             onPressed: () {
-              // Ação do ícone de itens salvos
+              Navigator.push(context, MaterialPageRoute(builder: (context) => ItensSalvosPage()));
             },
           ),
           IconButton(

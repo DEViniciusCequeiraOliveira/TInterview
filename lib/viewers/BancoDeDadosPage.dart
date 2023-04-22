@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tinterview/viewers/SearchField.dart';
+import 'package:tinterview/viewers/ItensSalvosPage.dart';
 
 class BancoDeDadosPage extends StatefulWidget {
   @override
@@ -31,7 +32,7 @@ class _BancoDeDadosPageState extends State<BancoDeDadosPage> {
           IconButton(
             icon: Icon(Icons.bookmark),
             onPressed: () {
-              // Ação do ícone de itens salvos
+              Navigator.push(context, MaterialPageRoute(builder: (context) => ItensSalvosPage()));
             },
           ),
           IconButton(
