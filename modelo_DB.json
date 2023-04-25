@@ -1,4 +1,142 @@
- "técnica": {
+{
+    "subconjunto": {
+        "frontend": {
+            "técnica": {
+                "estágio": {
+                    "linguagens": {
+                        "HTML": [
+                            {
+                                "pergunta": "O que é HTML?",
+                                "resposta": "HTML é blalbalaqlbalba"
+                            },
+                            {
+                                "pergunta": "Qual é a diferença entre HTML e XHTML?",
+                                "resposta": "XHTML é uma versão mais restrita e sintaticamente correta do HTML."
+                            }
+                        ],
+                        "CSS": [
+                            {
+                                "pergunta": "O que é CSS?",
+                                "resposta": "CSS é uma linguagem de estilo utilizada para definir a aparência de documentos HTML."
+                            },
+                            {
+                                "pergunta": "O que são seletores CSS?",
+                                "resposta": "Os seletores CSS são padrões usados para selecionar elementos HTML para aplicar estilos."
+                            }
+                        ],
+                        "JavaScript": [
+                            {
+                                "pergunta": "O que é JavaScript?",
+                                "resposta": "JavaScript é uma linguagem de programação interpretada que é usada principalmente no desenvolvimento de páginas web interativas."
+                            },
+                            {
+                                "pergunta": "Quais são as diferenças entre null e undefined no JavaScript?",
+                                "resposta": "null é um valor que representa a ausência intencional de qualquer objeto ou valor. undefined é um valor que representa uma variável que foi declarada, mas ainda não foi atribuída a um valor."
+                            }
+                        ]
+                    },
+                    "frameworks": {
+                        "Vue.js": [
+                            {
+                                "pergunta": "O que é o Vue.js?",
+                                "resposta": "O Vue.js é um framework JavaScript progressivo para a construção de interfaces de usuário."
+                            },
+                            {
+                                "pergunta": "O que são diretivas no Vue.js?",
+                                "resposta": "As diretivas são atributos especiais que adicionam comportamentos reativos aos elementos HTML."
+                            }
+                        ],
+                        "React": [
+                            {
+                                "pergunta": "O que é o Angular?",
+                                "resposta": "O Angular é um framework JavaScript para a construção de aplicativos web e mobiles."
+                            },
+                            {
+                                "pergunta": "Quais são os ciclos de vida de um componente no Angular?",
+                                "resposta": "Os ciclos de vida de um componente no Angular são: OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit e AfterViewChecked."
+                            }
+                        ],
+                        "Angular": [
+                            {
+                                "pergunta": "O que é o React?",
+                                "resposta": "O React é uma biblioteca JavaScript para construção de interfaces de usuário."
+                            },
+                            {
+                                "pergunta": "O que são props no React?",
+                                "resposta": "As props são objetos que permitem que dados sejam passados de um componente pai para um componente filho no React."
+                            }
+                        ]
+                    }
+                },
+
+                "trainee": {
+                    "linguagens": {
+                        "HTML": [
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                        ],
+                        "CSS": [
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                        ],
+                        "JavaScript": [
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                        ]
+                    },
+                    "frameworks": {
+                        "Vue.js": [
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                        ],
+                        "React": [
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                        ],
+                        "Angular": [
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                        ]
+                    }
+                }
+            },
+            "code interview": {
                 "estágio": {
                     "linguagens": {
                         "HTML": [
@@ -133,3 +271,9 @@
                     }
                 }
             }
+        },
+        "backend":{
+           "..."
+        }
+    }
+}
